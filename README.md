@@ -5,6 +5,8 @@ Copyright (C) 2019 Marc René Schädler
 
 E-mail: marc.r.schaedler@uni-oldenburg.de
 
+![Motivating image](https://raw.githubusercontent.com/m-r-s/fade-tascar-openmha/master/images/motivation.png)
+
 The scripts provided in this software package can be used to simulate aided speech recognition experiments with the Framework for Auditory Discrimination Experiments (FADE, [1]) in acoustic scenes that are rendered with the Toolbox for Acoustic Scene Creation and Rendering (TASCAR, [2]) and the data from the OlHeaD-HRTF Database [3] where the hearing aid is simulated with the open Master Hearing Aid (openMHA, [4]).
 
 Please note that these scripts expects recordings to be 32-bit wav files, sampled at 48kHz, that are calibrated such that an RMS of 1 means 130 dB SPL .
