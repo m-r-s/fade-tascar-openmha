@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session duration="60" srv_port="none" loop="true" attribution="Marc René Schädler">
+  <scene guiscale="10" ismorder="1" name="main">
+    <receiver type="omni" caliblevel="130">
+      <position>0 0 0 0</position>
+      <orientation>0 0 0 0</orientation>
+    </receiver>
+    <source name="probe">
+      <position>0 1 0 0</position>
+      <sound>
+      </sound>
+    </source>
+  </scene>
+</session>

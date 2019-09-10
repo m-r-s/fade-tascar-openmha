@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session duration="60" srv_port="none" loop="true" attribution="Marc René Schädler">
+  <scene guiscale="10" ismorder="1" name="main">
+    <receiver type="hoa2d" maxre="true" name="out_hoa" layout="layout.spk" caliblevel="65">
+      <position>0 0 0 0</position>
+      <orientation>0 0 0 0</orientation>
+    </receiver>
+    <source name="probe">
+      <position>0 1 0 0</position>
+      <sound>
+      </sound>
+    </source>
+  </scene>
+  <modules>
+    <hrirconv autoconnect="true" fftlen="2048" hrirfile="HRIR-KEMAR-ED-48.wav" inchannels="48" outchannels="2"/>
+  </modules>
+</session>
