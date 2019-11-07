@@ -69,10 +69,12 @@ case "${MODE}" in
 esac
 
 fade simulation corpus-generate || exit 1
-fade simulation processing "${PROCESSING_DIR}" || exit 1
 fade simulation corpus-format || exit 1
-[ -e "simulation/corpus" ] && rm -rf "simulation/corpus"
-fade simulation features "${FEATURES}" "${FEATURES_PROFILE}" || exit 1
+if [ -n "${PROCESSING_DIR}" ]; then
+  fade simulation processing "${PROCESSING_DIR}" || exit 1
+  [ -e "simulation/corpus" ] && rm -rf "simulation/corpus"
+fi
+fade simulation features "${FEATURES}" "${FEATURES_PROFILE}" "${FEATURES_UNCERTAINTY}" || exit 1
 [ -e "simulation/processing" ] && rm -rf "simulation/processing"
 fade simulation training || exit 1
 fade simulation recognition || exit 1
