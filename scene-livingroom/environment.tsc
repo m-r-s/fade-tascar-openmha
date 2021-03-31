@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<session name="tascar" duration="3600" loop="false">
+  <scene name="Livingroom">
+    <source name="TV" mute="TVMUTE" >
+    </source>
+
+    <source name="CR" mute="CRMUTE">
+    </source>
+    
+    <source name="probe" mute="PROBEMUTE">
+      <position>0 PROBEXXX PROBEYYY PROBEZZZ</position>
+      <sound>
+        <plugins>
+          <sndfile name="sounds/impulse.wav" levelmode="calib" level="65" position="PROBESTART" />
+        </plugins>
+      </sound>
+    </source>
+</session>

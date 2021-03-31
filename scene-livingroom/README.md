@@ -1,0 +1,1 @@
+The "environment.tsc" is only a placeholder TASCAR scene description, because the original content could not be shared due to unresolved licensing issues.
